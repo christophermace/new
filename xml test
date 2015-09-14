@@ -1,0 +1,9 @@
+import xml.etree.ElementTree as ET
+tree = ET.parse('c:/asb131231.xml')
+root = tree.getroot()
+for child in root:
+    for child in child:
+        for child in child:
+            for assignor in child:
+                for child in assignor:
+                    print child.tag, child.text             
